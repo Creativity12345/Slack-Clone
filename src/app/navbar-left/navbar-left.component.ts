@@ -49,11 +49,14 @@ export class NavbarLeftComponent implements OnInit {
   loadCommunicationSectionsFromFirestore() {
     this.firestore.collection('users').doc(this.use.currentUserId).valueChanges().subscribe((user: any) => {
       this.communicationSections = user.communicationSections;
-      this.loadChannels();
-      this.loadGroups();
-      this.loadDirectMessages();
+      if (this.communicationSections) {
+        this.loadChannels();
+        this.loadGroups();
+        this.loadDirectMessages();
+      }
     });
   }
+
 
 
   /**
@@ -116,10 +119,10 @@ export class NavbarLeftComponent implements OnInit {
   }
 
 
-/**
- * loads the name for the heading from the other participant
- * @param participants participants from chat
- */
+  /**
+   * loads the name for the heading from the other participant
+   * @param participants participants from chat
+   */
   loadUserNameDown(participants) {
     participants.forEach(id => {
       if (id !== this.use.currentUserId) {
@@ -142,7 +145,7 @@ export class NavbarLeftComponent implements OnInit {
   openDialogChannel() {
     this.dialog.open(DialogAddChannelComponent);
   }
- 
+
 
   /**
    * opens a dialog
