@@ -17,7 +17,7 @@ export class DialogAddTeamMemberComponent {
   isGuest;
 
   constructor(public use: UserService, private firestore: AngularFirestore, private dialogRef: MatDialogRef<DialogAddTeamMemberComponent>) {
-    if (this.use.currentUserId == 'TzlCRRHBcjQ30Oml2Tb8') {
+    if (this.use.currentUserId == 'ix0IObrN2wRzihLvOQww') {
       this.isGuest = true;
     } else {
       this.isGuest = false;

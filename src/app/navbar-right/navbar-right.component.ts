@@ -25,7 +25,7 @@ export class NavbarRightComponent {
 
   constructor(public use: UserService, public nav: NavbarService, private firestore: AngularFirestore, public dialog: MatDialog) { 
 
-    if(this.use.currentUserId == 'TzlCRRHBcjQ30Oml2Tb8') {
+    if(this.use.currentUserId == 'ix0IObrN2wRzihLvOQww') {
       this.isGuest = true;
     } else {
       this.isGuest = false;

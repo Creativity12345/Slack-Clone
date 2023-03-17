@@ -35,7 +35,7 @@ export class DialogChangeImgComponent {
 
 
   constructor(public use: UserService, private dialogRef: MatDialogRef<DialogUpdateContactComponent>) {
-    if (this.use.currentUserId == 'TzlCRRHBcjQ30Oml2Tb8') {
+    if (this.use.currentUserId == 'ix0IObrN2wRzihLvOQww') {
       this.isGuest = true;
     } else {
       this.isGuest = false;
