@@ -60,7 +60,7 @@ export class DialogAddTeamMemberComponent {
   checkIsItGuest() {
     let self = this;
     this.allUsers.forEach(function (user, i) {
-      let result = user.docId === 'TzlCRRHBcjQ30Oml2Tb8';
+      let result = user.docId === 'ix0IObrN2wRzihLvOQww';
       if (result) {
         self.allUsers.splice(i, 1)
         self.checkAllUsers();
