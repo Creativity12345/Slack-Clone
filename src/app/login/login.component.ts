@@ -156,7 +156,7 @@ export class LoginComponent {
    * Login for Guest
    */
   guestLogin() {
-    this.router.navigateByUrl('/slack/TzlCRRHBcjQ30Oml2Tb8');
+    this.router.navigateByUrl('/slack/ix0IObrN2wRzihLvOQww');
   }
 
 
