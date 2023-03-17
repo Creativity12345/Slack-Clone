@@ -39,7 +39,7 @@ export class NavbarLeftComponent implements OnInit {
    */
   ngOnInit() {
     this.loadCommunicationSectionsFromFirestore();
-    this.openMessageHistory('KlTnEdj7XuVLzYnB13Iw', 'channels', 'General', true);
+    this.openMessageHistory('TLmES9PTC8aEAw9aGIa4', 'channels', 'General', true);
   }
 
 
