@@ -9,8 +9,6 @@ import { ErrorStateMatcher } from '@angular/material/core';
 import { Router } from '@angular/router';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { user } from 'src/models/user';
-import { Observable } from 'rxjs';
-import { MatAutocompleteTrigger } from '@angular/material/autocomplete';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(
