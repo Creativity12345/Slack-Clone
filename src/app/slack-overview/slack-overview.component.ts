@@ -11,9 +11,6 @@ import { UserService } from 'src/services/user.service';
 
 export class SlackOverviewComponent {
   whichContentShouldLoad;
-  // mobileNavBar = true;
-  // mobileContent = true;
-  // navBarRight = true;
   innerWidth: any;
 
   constructor(public use: UserService, public nav: NavbarService, private route: ActivatedRoute,) {
