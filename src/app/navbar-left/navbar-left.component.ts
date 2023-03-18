@@ -22,6 +22,7 @@ export class NavbarLeftComponent implements OnInit {
   headlinesOfDirectMessages = [];
   withWhoDirectMessages = [];
   @Output() whichContentShouldLoad = new EventEmitter<any>();
+  public profileImgSrc = '';
 
   constructor(public use: UserService, public nav: NavbarService, private firestore: AngularFirestore, public dialog: MatDialog) {
   }

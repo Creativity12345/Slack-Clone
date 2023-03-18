@@ -14,17 +14,8 @@
     font-size: 17px;
     font-weight: bold;
     margin-top: 24px;
-    padding-left: 12px;
-}
-
-.border {
+    padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.channels-content {
-    padding-top: 12px;
 }
 
 .directMessages-content {
@@ -36,54 +27,56 @@
     align-items: center;
     gap: 10px;
     font-size: 15px;
-    padding-bottom: 12px;
     font-weight: 400;
-    height: 20px;
-
-    button {
-        padding: 0;
-        margin-left: auto;
-    }
-}
-
-.hashes {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.4)
-}
-
-.channel-name {
-    cursor: pointer;
+    height: 25px;
+    padding-left: 12px;
 
     &:hover {
-        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: rgba($color: #fefefe, $alpha: 0.2);
     }
 }
 
-.single-dm {
-    display: flex;
-    align-items: center;
-    padding-bottom: 12px;
-    font-weight: 400;
-    font-size: 15px;
+.chat-name {
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.add-btn {
+    padding-top: 10px;
 }
 
 .add-element {
     display: flex;
     align-items: center;
-    padding-bottom: 12px;
+    padding-top: 10px;
     font-weight: 400;
-    cursor: pointer;
+    padding-left: 12px;
 
     mat-icon {
         font-size: 18px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+    }
+
+    span {
+        cursor: pointer;
+
+        &:hover {
+            color: rgba($color: #ffffff, $alpha: 0.8);
+        }
     }
 }
 
 mat-icon {
     font-size: 14px;
     line-height: 1.7;
+
+    &:hover {
+        color: rgba($color: #ffffff, $alpha: 0.8);
+    }
 }
 
 .instanceTitle {
