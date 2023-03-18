@@ -3,7 +3,7 @@
 
   <p>We suggest using the <b>email address that you use at work.</b></p>
 
-  <form class="example-form" (ngSubmit)="UserLogin()" #myForm ngNativeValidate>
+  <form class="example-form" (ngSubmit)="userLogin()" #myForm ngNativeValidate>
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
       <input
@@ -47,7 +47,7 @@
   <div class="new-user-link">
     <p>
       You don't have an account ?
-      <span (click)="NewUserOverview()"> Here</span> you can create a new account
+      <span (click)="newUserOverview()"> Here</span> you can create a new account
     </p>
   </div>
 </div>

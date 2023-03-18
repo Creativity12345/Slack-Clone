@@ -68,7 +68,6 @@ export class LoginComponent {
   @ViewChild('resetPwRepeat') resetPwRepeat: ElementRef;
   @ViewChild('resetEmail') resetEmail: ElementRef;
 
-  // var for push text
 
   ngOnInit() {
     this.firestore
@@ -161,7 +160,7 @@ export class LoginComponent {
   /**
    * Login for User
    */
-  UserLogin() {
+  userLogin() {
     let inputPassword = this.loginPassword.nativeElement.value;
     let inputEmail = this.loginEmail.nativeElement.value;
 
@@ -227,7 +226,7 @@ export class LoginComponent {
   }
 
 
-  NewUserOverview() {
+  newUserOverview() {
     this.newUser = true;
   }
   
