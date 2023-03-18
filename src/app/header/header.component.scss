@@ -1,5 +1,5 @@
-.toolbar-header {
-    background-color: #2B092A;
+.header-container {
+    background-color: #313843;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,6 @@ mat-form-field {
     align-self: center;
     border-radius: 5px;
     padding: 5px 5px;
-    border: 1px solid gray;
 
     @media screen and (max-width: 620px) {
         display: none;
@@ -71,7 +70,6 @@ mat-form-field {
         padding: 0px 10px;
         font-size: 14px;
         color: white;
-        height: 63;
     }
 
     button {
