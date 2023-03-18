@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="content">
-    <app-navbar-left (whichContentShouldLoad)="setContent($event)" id="sidenav-leftt" *ngIf="nav.showNavbarLeft"></app-navbar-left>
+    <app-navbar-left (whichContentShouldLoad)="setContent($event)" *ngIf="nav.showNavbarLeft"></app-navbar-left>
     <app-messages-history [whichContentShouldLoad]="whichContentShouldLoad" *ngIf="nav.showContent"></app-messages-history>
     <app-navbar-right></app-navbar-right>
 </div>
