@@ -32,7 +32,7 @@
         <summary class="chat-name">Direct Messages</summary>
             <div class="single-channel" *ngFor="let directMessage of directMessages; let i = index"
                 (click)="openMessageHistory(directMessage.docId, directMessage.collection, headlinesOfDirectMessages[i], false)">
-                <div><img class="profile-img" [src]="profileImgSrc"></div>
+                <img class="profile-img" [src]="userImage">
                 <div class="channel-name"><span>{{ headlinesOfDirectMessages[i] }}</span></div>
             </div>
             <div class="add-element" (click)="openDialogMember()">

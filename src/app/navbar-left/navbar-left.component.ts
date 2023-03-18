@@ -22,7 +22,7 @@ export class NavbarLeftComponent implements OnInit {
   headlinesOfDirectMessages = [];
   withWhoDirectMessages = [];
   @Output() whichContentShouldLoad = new EventEmitter<any>();
-  public profileImgSrc = '';
+  userImage;
 
   constructor(public use: UserService, public nav: NavbarService, private firestore: AngularFirestore, public dialog: MatDialog) {
   }
@@ -132,6 +132,7 @@ export class NavbarLeftComponent implements OnInit {
           let result = this.headlinesOfDirectMessages.filter(id => id.includes(`${user.userInfos.firstName} ${user.userInfos.lastName}`))
           if (result.length == 0) {
             this.headlinesOfDirectMessages.push(`${user.userInfos.firstName} ${user.userInfos.lastName}`);
+            this.userImage = user.userInfos.profileImg;
           }
         })
       }

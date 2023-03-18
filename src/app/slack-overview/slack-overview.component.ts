@@ -57,7 +57,6 @@ export class SlackOverviewComponent {
   showChannels() {
     this.nav.closeAll();
     this.nav.showNavbarLeft = true;
-    
   }
 
 
