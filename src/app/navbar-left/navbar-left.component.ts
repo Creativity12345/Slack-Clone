@@ -27,6 +27,7 @@ export class NavbarLeftComponent implements OnInit {
   constructor(public use: UserService, public nav: NavbarService, private firestore: AngularFirestore, public dialog: MatDialog) {
   }
 
+
   autoScrollOn() {
     this.nav.autoScroll = true;
     setTimeout(() => {

@@ -22,7 +22,7 @@ export class SlackOverviewComponent {
       }
     
     this.route.params.subscribe((params) => {
-      this.use.currentUserId= params['id'];
+      this.use.currentUserId = params['id'];
     });
   }  
   
