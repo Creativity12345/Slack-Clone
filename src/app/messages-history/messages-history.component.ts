@@ -142,7 +142,6 @@ export class MessagesHistoryComponent {
   openCreatorProfile(id) {
     this.nav.openRight();
     this.nav.whichProfileShouldLoad.next(id);
-
   };
 
 

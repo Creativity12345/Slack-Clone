@@ -58,7 +58,6 @@ export class NavbarLeftComponent implements OnInit {
   }
 
 
-
   /**
    * load the information for the channel
    */
