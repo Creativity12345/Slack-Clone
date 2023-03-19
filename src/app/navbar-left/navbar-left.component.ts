@@ -67,9 +67,11 @@ export class NavbarLeftComponent implements OnInit {
     let channels = [];
     let alreadyUsedIds = [];
     this.communicationSections.channels.forEach(channelId => {
+      
       this.firestore.collection('channels').doc(channelId).valueChanges({ idField: 'docId' }).subscribe((channel: any) => {
         let result = alreadyUsedIds.filter(id => id.includes(channelId))
         if (result.length == 0 || alreadyUsedIds.length == 0) {
+          
           alreadyUsedIds.push(channelId)
           channels.push(channel);
         }
