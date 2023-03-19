@@ -15,11 +15,11 @@
 
     <mat-card-content class="edit-user-btn">
         <p>{{ firstName }} {{ lastName }}</p>
-        <button *ngIf="isItMe" mat-button (click)="openDialog()" color="primary">Edit</button>
+        <button *ngIf="isItMe" mat-button (click)="openDialog()">Edit</button>
     </mat-card-content>
     <mat-card-content *ngIf="!isGuest" class="edit-contactdata-btn">
         <p>Contact data</p>
-        <button *ngIf="isItMe" mat-button (click)="openDialogContact()" color="primary">Edit</button>
+        <button *ngIf="isItMe" mat-button (click)="openDialogContact()">Edit</button>
     </mat-card-content>
     <div *ngIf="!isGuest" class="email-phone">
         <mat-icon fontIcon="mail"></mat-icon>
