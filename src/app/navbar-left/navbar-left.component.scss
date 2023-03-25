@@ -4,6 +4,10 @@
     color: white;
     min-width: 250px;
     overflow: auto;
+
+    @media screen and (max-width: 620px){
+        height: calc(100vh - 105px);
+    }
 }
 
 .instanceTitle {
