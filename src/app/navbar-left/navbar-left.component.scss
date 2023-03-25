@@ -1,13 +1,9 @@
 .sidenav-left-container {
-    height: calc(100vh - 64px);
+    height: 100%;
     background-color: #303E4D;
     color: #FFFFFF;
     min-width: 250px;
     overflow: auto;
-
-    @media screen and (max-width: 620px) {
-        height: calc(100vh - 30px);
-    }
 }
 
 .instanceTitle {
