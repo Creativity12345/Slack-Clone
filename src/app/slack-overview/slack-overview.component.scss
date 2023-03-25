@@ -44,10 +44,10 @@ app-header{
 
         @media screen and (max-width: 620px){
             position: absolute;
+            top: 63px;
             left: 0;
             right: 0;
             bottom: 0;
-            height: 100vh;
             z-index: 1;
         }
 

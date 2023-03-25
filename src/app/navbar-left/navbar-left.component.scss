@@ -1,5 +1,5 @@
 .sidenav-left-container {
-    height: 100%;
+    height: calc(100vh - 64px);
     background-color: #303E4D;
     color: white;
     min-width: 250px;
@@ -17,10 +17,6 @@
 
     span {
         padding-left: 24px;
-    }
-
-    @media screen and (max-width: 620px) {
-        margin-top: 64px;
     }
 }
 
